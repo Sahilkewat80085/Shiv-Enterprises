@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHIV ENTERPRISES - Security &amp; Power Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f7f9fb",
+                        "background": "#f7f9fb",
+                        "on-tertiary-container": "#a07f3c",
+                        "on-primary-fixed": "#131b2e",
+                        "primary-fixed-dim": "#bec6e0",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2d3133",
+                        "surface-tint": "#565e74",
+                        "outline-variant": "#c6c6cd",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "inverse-primary": "#bec6e0",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed": "#261900",
+                        "on-tertiary-fixed-variant": "#5c4202",
+                        "tertiary-fixed": "#ffdea3",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "primary-container": "#131b2e",
+                        "on-surface-variant": "#45464d",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-background": "#191c1e",
+                        "tertiary-fixed-dim": "#e8c177",
+                        "tertiary-container": "#261900",
+                        "secondary-fixed": "#d5e3fc",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#7c839b",
+                        "on-surface": "#191c1e",
+                        "tertiary": "#000000",
+                        "outline": "#76777d",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d5e3fc",
+                        "on-primary": "#ffffff",
+                        "primary": "#0F172A", // Navy
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-low": "#f2f4f6",
+                        "primary-fixed": "#dae2fd",
+                        "surface-dim": "#d8dadc",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#515f74",
+                        "surface-container": "#eceef0",
+                        "on-secondary-container": "#57657a",
+                        "surface-container-high": "#e6e8ea",
+                        "accent-gold": "#C8A45D"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Manrope"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "label-md": ["Inter"],
+                        "headline-xl-mobile": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant w-full sticky top-0 z-50 flat no shadows">
+<div class="flex justify-between items-center w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-primary">
+                SHIV ENTERPRISES
+            </div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-primary border-b-2 border-primary pb-1 font-semibold hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#services">Services</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#cctv">CCTV</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#solar">Solar</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#power">Power</a>
+<a class="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150" href="#support">Support</a>
+</nav>
+<div class="hidden md:flex items-center space-x-6">
+<div class="flex items-center space-x-2 text-primary font-label-md">
+<span class="material-symbols-outlined text-lg">call</span>
+<span>8408829992 / 7020378588</span>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-opacity-90 transition-all">
+                    Get Quote
+                </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[600px] flex items-center justify-center">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Security technician installing a CCTV camera on a modern corporate building exterior during daylight. The aesthetic is industrial, professional, and reliable." class="w-full h-full object-cover" src="images/hero-cctv.jpg"/>
+<div class="absolute inset-0 bg-primary bg-opacity-70"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary">
+<div class="max-w-3xl">
+<span class="inline-block bg-accent-gold text-primary font-label-md px-3 py-1 rounded-sm mb-6">ESTABLISHED 1999</span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">
+                    Trusted Security &amp; Power Solutions Since 25+ Years
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mb-10 max-w-2xl">
+                    CCTV Installation, Solar Systems, Biometric Access, EPBX &amp; Power Backup Solutions for Homes and Businesses.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<button class="bg-accent-gold text-primary px-8 py-3 rounded-sm font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">call</span>
+                        Call Now
+                    </button>
+<button class="bg-transparent border border-on-primary text-on-primary px-8 py-3 rounded-sm font-label-md hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">chat</span>
+                        WhatsApp Us
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-surface-container-lowest border-b border-outline-variant py-8">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-accent-gold">verified</span>
+<span class="font-label-md text-primary">25+ Years Experience</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-accent-gold">engineering</span>
+<span class="font-label-md text-primary">Professional Team</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-accent-gold">support_agent</span>
+<span class="font-label-md text-primary">Fast Support</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-accent-gold">payments</span>
+<span class="font-label-md text-primary">Affordable Pricing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-20 bg-surface" id="services">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-12 text-center md:text-left">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Our Core Services</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Industrial-grade installations backed by decades of technical expertise.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- CCTV -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<img alt="CCTV camera installed on a wall" class="w-full h-48 object-cover rounded mb-6" src="images/service-cctv.jpg"/>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">CCTV Cameras</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">High-definition surveillance systems for complete property monitoring.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Solar -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<img alt="Solar panels installed on a residential roof" class="w-full h-48 object-cover rounded mb-6" src="images/service-solar.jpg"/>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Solar Systems</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Efficient, high-yield solar energy solutions for sustainable power.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Inverter -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<img alt="Industrial battery and inverter setup in a clean utility room" class="w-full h-48 object-cover rounded mb-6" src="images/service-battery.jpg"/>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Inverter &amp; Battery</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Reliable power backup systems ensuring zero downtime.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Biometric -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<img alt="Modern biometric fingerprint scanner on a corporate office wall" class="w-full h-48 object-cover rounded mb-6" src="images/service-biometric.jpg"/>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Biometric Systems</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Secure access control and attendance management solutions.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- EPBX -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<div class="w-full h-48 bg-surface-container-high rounded mb-6 flex items-center justify-center" data-alt="Close up photograph of a professional multi-line EPBX telephone switchboard system in a clean server room. Industrial, highly detailed, precise lighting.">
+<span class="material-symbols-outlined text-5xl text-outline">router</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">EPBX Systems</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Robust internal communication networks for seamless business operations.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Maintenance -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow">
+<div class="w-full h-48 bg-surface-container-high rounded mb-6 flex items-center justify-center" data-alt="A professional technician in a clean uniform inspecting an electrical panel. Focused on technical expertise and reliable service. High quality corporate photography.">
+<span class="material-symbols-outlined text-5xl text-outline">build</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Maintenance &amp; Support</h3>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Comprehensive AMC and rapid-response repair services.</p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:text-accent-gold transition-colors" href="#">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Map -->
+<section class="py-20 bg-surface-container-low border-t border-outline-variant">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Form -->
+<div class="bg-surface-container-lowest p-8 border border-outline-variant rounded">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Request a Quote</h2>
+<form class="space-y-4">
+<div>
+<label class="block font-label-md text-primary mb-1">Full Name</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-0 font-body-sm" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-primary mb-1">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-0 font-body-sm" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md text-primary mb-1">Service Required</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-0 font-body-sm">
+<option>CCTV Installation</option>
+<option>Solar Systems</option>
+<option>Power Backup</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-primary mb-1">Message (Optional)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-0 font-body-sm" rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded font-label-md hover:bg-opacity-90 transition-colors" type="submit">Submit Inquiry</button>
+</form>
+</div>
+<!-- Info & Map -->
+<div class="flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Contact Information</h2>
+<ul class="space-y-4 font-body-md text-secondary">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>123 Industrial Estate, Main Road, City Center, 400001</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>8408829992 / 7020378588</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>info@shiv-enterprises.com</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 h-64 bg-surface-container-high rounded border border-outline-variant flex items-center justify-center overflow-hidden relative">
+<!-- Map Placeholder -->
+<div class="absolute inset-0 bg-surface-dim opacity-50 z-10 flex items-center justify-center" data-location="Mumbai, India" style="">
+<span class="font-label-md text-primary">Interactive Map Container</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-high w-full bottom-0 border-t border-outline-variant flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 gap-gutter">
+<div class="text-center md:text-left">
+<div class="font-headline-sm text-headline-sm font-bold text-primary mb-2">SHIV ENTERPRISES</div>
+<div class="font-body-sm text-body-sm text-on-surface mb-1">Safety • Security • Trust — With SHIV ENTERPRISES</div>
+<div class="font-body-sm text-body-sm text-on-surface opacity-70">© 2024 SHIV ENTERPRISES. Security &amp; Power Solutions for over 25 years.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-6 mt-4 md:mt-0">
+<a class="text-secondary font-body-sm hover:text-primary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="text-secondary font-body-sm hover:text-primary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Terms of Service</a>
+<a class="text-secondary font-body-sm hover:text-primary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Contact Support</a>
+<a class="text-secondary font-body-sm hover:text-primary hover:underline transition-all opacity-100 hover:opacity-80" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>
