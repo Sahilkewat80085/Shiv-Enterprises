@@ -1,9 +1,8 @@
 import Image from "next/image";
-import TrustStrip from "./TrustStrip";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[600px] flex flex-col justify-between">
+    <section className="relative w-full min-h-[calc(100vh-76px)] flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,7 +16,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-primary/70 z-10" />
       </div>
 
-      <div className="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary flex-1 flex flex-col justify-center">
+      <div className="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary">
         <div className="max-w-3xl">
           <span className="inline-block bg-accent-gold text-primary font-label-md px-3 py-1 rounded-xs mb-6">
             ESTABLISHED 1999
@@ -40,10 +39,6 @@ export default function Hero() {
             </button>
           </div>
         </div>
-      </div>
-
-      <div className="relative z-20 w-full border-t border-white/20 bg-primary/20 backdrop-blur-sm">
-        <TrustStrip />
       </div>
     </section>
   );
