@@ -9,9 +9,12 @@ export default function Header() {
     <header className="bg-surface border-b border-outline-variant w-full sticky top-0 z-50">
       <div className="flex justify-between items-center w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-4">
         {/* Brand Logo */}
-        <div className="font-headline-md text-headline-md font-bold tracking-tight text-primary">
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="font-headline-md text-headline-md font-bold tracking-tight text-primary cursor-pointer hover:opacity-80 transition-opacity focus:outline-none"
+        >
           SHIV ENTERPRISES
-        </div>
+        </button>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex space-x-8">
