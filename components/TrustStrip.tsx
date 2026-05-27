@@ -1,6 +1,6 @@
 export default function TrustStrip() {
   const items = [
-    { icon: "verified", text: "25+ Years Experience" },
+    { icon: "verified", text: "25+ Years of Trust" },
     { icon: "engineering", text: "Professional Team" },
     { icon: "support_agent", text: "Fast Support" },
     { icon: "payments", text: "Affordable Pricing" },
