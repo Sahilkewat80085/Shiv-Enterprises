@@ -69,7 +69,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-[0px_4px_12px_rgba(15,23,42,0.08)] transition-shadow flex flex-col justify-between"
+              className="bg-surface-container-lowest border border-outline-variant rounded p-6 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex flex-col justify-between"
             >
               <div>
                 {/* Image or Icon Container */}
