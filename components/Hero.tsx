@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl animate-fade-in-up opacity-0">
           <span className="inline-block bg-accent-gold text-primary font-label-md px-3 py-1 rounded-xs mb-6">
             ESTABLISHED 1999
           </span>
