@@ -168,3 +168,48 @@ html {
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
 
+/* Marquee Animations for Seamless Scrolling */
+@keyframes marquee-ltr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-ltr {
+  display: flex;
+  width: max-content;
+  animation: marquee-ltr var(--marquee-duration, 40s) linear infinite;
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl var(--marquee-duration, 40s) linear infinite;
+}
+
+/* Smooth Mask Fading at Left and Right Edges */
+.mask-fade-edges {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* Pause Scrolling on Hover */
+.marquee-row:hover .animate-marquee-ltr,
+.marquee-row:hover .animate-marquee-rtl {
+  animation-play-state: paused;
+}
+
+
+

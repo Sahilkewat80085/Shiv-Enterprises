@@ -5,7 +5,7 @@ SHIV Hospital
 DESHMUKH Multispecialty Hospital
 new vitthal Hospital
 Thorat Eye Hospital
- Vaidya eye Hospital
+Vaidya eye Hospital
 New vitthal hospital
 Bajaj Children Hospital
 Upadhay eye hospital
@@ -16,7 +16,7 @@ Chafe Clicnic
 Jaybahye Clicnic
 Maheshwari Diagnostics
 More sonography and xray clinic
-Knode ENT specialist 
+Khonde ENT specialist 
 wankhade eye hospital
 Thote hospital
 Korde eye
