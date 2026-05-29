@@ -104,7 +104,7 @@ function getParsedCustomers(): Category[] {
       const direction = rowIndex % 2 === 0 ? "ltr" : "rtl";
       
       // Select slightly different speeds so the rows scroll at organic, offset velocities
-      const baseSpeed = 35 + (rowIndex * 8);
+      const baseSpeed = 70 + (rowIndex * 15);
       const speed = `${baseSpeed}s`;
       
       return {
@@ -189,3 +189,4 @@ export default function TrustedCustomers() {
     </section>
   );
 }
+

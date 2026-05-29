@@ -137,7 +137,7 @@ export default function ContactForm() {
               <ul className="space-y-4 font-body-md text-secondary">
                 <li className="flex items-start gap-3">
                   <span className="material-symbols-outlined text-primary mt-0.5">location_on</span>
-                  <span>123 Industrial Estate, Main Road, City Center, 400001</span>
+                  <span>P268+8FQ SHIV ENTERPRISES, Barajotirling Road, near Rao Residency, Ranpise Nagar, Akola, Maharashtra 444005</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary">call</span>
@@ -145,7 +145,11 @@ export default function ContactForm() {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary">mail</span>
-                  <span>info@shiv-enterprises.com</span>
+                  <span>shiv8408829992@gmail.com</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="material-symbols-outlined text-primary">receipt_long</span>
+                  <span>GST: 27AAHPE4229N1ZI</span>
                 </li>
               </ul>
             </div>
@@ -154,7 +158,7 @@ export default function ContactForm() {
             <div className="mt-8 h-64 bg-surface-container-high rounded border border-outline-variant overflow-hidden relative shadow-inner">
               <iframe
                 title="Shiv Enterprises Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8354897003463!2d72.85935817596001!3d19.07095915214041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8e1329c29c5%3A0xe54ef86cb4f71a4f!2sIndustrial%20Estate!5e0!3m2!1sen!2sin!4v1716684803923!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=P268%2B8FQ%20SHIV%20ENTERPRISES%2C%20Barajotirling%20Road%2C%20near%20Rao%20Residency%2C%20Ranpise%20Nagar%2C%20Akola%2C%20Maharashtra%20444005&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

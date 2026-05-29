@@ -1,61 +1,54 @@
 Hospitals:
-OZON Hospital
-ORBIT hospital
-SHIV Hospital
-DESHMUKH Multispecialty Hospital
-new vitthal Hospital
+Ozon Hospital
+Orbit Hospital
+Shiv Hospital
+Deshmukh Multispecialty Hospital
+New Vitthal Hospital
 Thorat Eye Hospital
-Vaidya eye Hospital
-New vitthal hospital
+Vaidya Eye Hospital
 Bajaj Children Hospital
-Upadhay eye hospital
-Yogesh patil hospital
-Lahode eye hospital
-Kale hospital
-Chafe Clicnic
-Jaybahye Clicnic
+Upadhay Eye Hospital
+Yogesh Patil Hospital
+Lahode Eye Hospital
+Kale Hospital
+Chafe Clinic
+Jaybahye Clinic
 Maheshwari Diagnostics
-More sonography and xray clinic
-Khonde ENT specialist 
-wankhade eye hospital
-Thote hospital
-Korde eye
-dr borakhade
-Dr pophalkar
+More Sonography and X-Ray Clinic
+Khonde ENT Specialist
+Wankhade Eye Hospital
+Thote Hospital
+Korde Eye
+Dr. Borakhade
+Dr. Pophalkar
 Bhabhurkar Hospital
 
-Jewellery
-Shri Soni jewellers
-Vikaram jewellers
-Khandelwal Alankar jewellers
-Bhamabre
-Sameer Soni jewellers
-Jay Soni jewellers
-PUkar Soni jewellers
-Nilesh soni jewellers
-Bhavin soni jewellers
-Batuk BHai soni jewellers
-Govardhan jewellers
+Jewellery:
+Shri Soni Jewellers
+Vikram Jewellers
+Khandelwal Alankar Jewellers
+Bhambare Jewellers
+Sameer Soni Jewellers
+Jay Soni Jewellers
+Pukar Soni Jewellers
+Nilesh Soni Jewellers
+Bhavin Soni Jewellers
+Batuk Bhai Soni Jewellers
+Govardhan Jewellers
 
-Builders/Architects
+Builders/Architects:
 Chaudhari Builders
 Hirulakar Builders
 Anandani Architect
-RatnaparkhiArchitecht
+Ratnaparkhi Architect
 Sham Thakur Architect
 
 Textile:
-Sayadram stores
-borkar stores
-Dulhan stores
-sanskar creations
-jain sons
-India handlooms
+Sayadram Stores
+Borkar Stores
+Dulhan Stores
+Sanskar Creations
+Jain Sons
+India Handlooms
 Khelkhilone
-Meem saab saree center
-
-
-
-
-
-
+Meem Saab Saree Center

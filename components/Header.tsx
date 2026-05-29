@@ -18,36 +18,20 @@ export default function Header() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex space-x-8">
-          <a
-            className="text-primary border-b-2 border-primary pb-1 font-semibold hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150"
-            href="#services"
-          >
-            Services
-          </a>
-          <a
-            className="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150"
-            href="#cctv"
-          >
-            CCTV
-          </a>
-          <a
-            className="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150"
-            href="#solar"
-          >
-            Solar
-          </a>
-          <a
-            className="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150"
-            href="#power"
-          >
-            Power
-          </a>
-          <a
-            className="text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95 transition-transform duration-150"
-            href="#support"
-          >
-            Support
-          </a>
+          {[
+            { label: "Home", href: "#" },
+            { label: "Services", href: "#services" },
+            { label: "Support", href: "#support" },
+          ].map((link) => (
+            <a
+              key={link.label}
+              className="group relative text-secondary font-medium hover:text-primary transition-colors duration-200 active:scale-95"
+              href={link.href}
+            >
+              {link.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
         </nav>
 
         {/* Desktop Action Items */}
@@ -80,30 +64,16 @@ export default function Header() {
             <a
               onClick={() => setIsMenuOpen(false)}
               className="text-primary font-semibold py-1 hover:text-primary transition-colors"
+              href="#"
+            >
+              Home
+            </a>
+            <a
+              onClick={() => setIsMenuOpen(false)}
+              className="text-secondary font-medium py-1 hover:text-primary transition-colors"
               href="#services"
             >
               Services
-            </a>
-            <a
-              onClick={() => setIsMenuOpen(false)}
-              className="text-secondary font-medium py-1 hover:text-primary transition-colors"
-              href="#cctv"
-            >
-              CCTV
-            </a>
-            <a
-              onClick={() => setIsMenuOpen(false)}
-              className="text-secondary font-medium py-1 hover:text-primary transition-colors"
-              href="#solar"
-            >
-              Solar
-            </a>
-            <a
-              onClick={() => setIsMenuOpen(false)}
-              className="text-secondary font-medium py-1 hover:text-primary transition-colors"
-              href="#power"
-            >
-              Power
             </a>
             <a
               onClick={() => setIsMenuOpen(false)}
