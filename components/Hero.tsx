@@ -29,14 +29,14 @@ export default function Hero() {
             Backup Solutions for Homes and Businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-accent-gold text-primary px-8 py-3 rounded-xs font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer">
+            <a href="tel:+918408829992" className="bg-accent-gold text-primary px-8 py-3 rounded-xs font-label-md hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer">
               <span className="material-symbols-outlined">call</span>
               Call Now
-            </button>
-            <button className="bg-transparent border border-on-primary text-on-primary px-8 py-3 rounded-xs font-label-md hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center gap-2 cursor-pointer">
+            </a>
+            <a href="https://wa.me/918408829992" target="_blank" rel="noopener noreferrer" className="bg-transparent border border-on-primary text-on-primary px-8 py-3 rounded-xs font-label-md hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center gap-2 cursor-pointer">
               <span className="material-symbols-outlined">chat</span>
               WhatsApp Us
-            </button>
+            </a>
           </div>
         </div>
       </div>
