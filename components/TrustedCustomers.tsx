@@ -15,23 +15,23 @@ interface Category {
 const categoryMetaMap: Record<string, { icon: string; iconColor: string; borderColor: string }> = {
   "hospitals": {
     icon: "local_hospital",
-    iconColor: "text-red-500 bg-red-500/10",
-    borderColor: "hover:border-red-300 hover:shadow-red-500/5"
+    iconColor: "text-accent-gold bg-accent-gold/10",
+    borderColor: "hover:border-accent-gold/40 hover:shadow-accent-gold/10"
   },
   "jewellery": {
     icon: "diamond",
-    iconColor: "text-amber-500 bg-amber-500/10",
-    borderColor: "hover:border-amber-300 hover:shadow-amber-500/5"
+    iconColor: "text-accent-gold bg-accent-gold/10",
+    borderColor: "hover:border-accent-gold/40 hover:shadow-accent-gold/10"
   },
   "builders/architects": {
     icon: "architecture",
-    iconColor: "text-blue-500 bg-blue-500/10",
-    borderColor: "hover:border-blue-300 hover:shadow-blue-500/5"
+    iconColor: "text-accent-gold bg-accent-gold/10",
+    borderColor: "hover:border-accent-gold/40 hover:shadow-accent-gold/10"
   },
   "textile": {
     icon: "shopping_bag",
-    iconColor: "text-emerald-500 bg-emerald-500/10",
-    borderColor: "hover:border-emerald-300 hover:shadow-emerald-500/5"
+    iconColor: "text-accent-gold bg-accent-gold/10",
+    borderColor: "hover:border-accent-gold/40 hover:shadow-accent-gold/10"
   }
 };
 
@@ -169,14 +169,14 @@ export default function TrustedCustomers() {
                 {repeatedList.map((item, index) => (
                   <div
                     key={`${rowIndex}-${item}-${index}`}
-                    className={`flex items-center gap-3 bg-surface-container-lowest/80 backdrop-blur-xs border border-outline-variant/20 px-5 py-3 rounded-full shadow-xs transition-all duration-300 hover:scale-105 hover:bg-surface-container-lowest hover:border-accent-gold/40 hover:shadow-md cursor-default shrink-0 ${cat.borderColor}`}
+                    className={`flex items-center gap-3.5 bg-surface-container-lowest border border-outline-variant/30 px-6 py-3.5 rounded-2xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-surface-container-lowest hover:border-accent-gold/50 hover:shadow-lg hover:shadow-accent-gold/10 cursor-default shrink-0`}
                   >
                     {/* Category Icon */}
-                    <span className={`material-symbols-outlined text-lg p-1.5 rounded-full flex items-center justify-center ${cat.iconColor}`}>
+                    <span className={`material-symbols-outlined text-xl p-2 rounded-xl flex items-center justify-center ${cat.iconColor}`}>
                       {cat.icon}
                     </span>
                     {/* Customer Name */}
-                    <span className="font-body-md text-primary font-medium pr-1">
+                    <span className="font-body-md text-primary font-medium tracking-tight pr-1">
                       {item}
                     </span>
                   </div>
