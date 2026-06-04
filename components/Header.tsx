@@ -40,9 +40,9 @@ export default function Header() {
             <span className="material-symbols-outlined text-lg">call</span>
             <span>8408829992 / 7020378588</span>
           </div>
-          <button className="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-opacity-90 transition-all cursor-pointer">
+          <a href="#support" className="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-opacity-90 transition-all cursor-pointer">
             Get Quote
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -88,9 +88,9 @@ export default function Header() {
               <span className="material-symbols-outlined text-lg">call</span>
               <span>8408829992 / 7020378588</span>
             </div>
-            <button className="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-opacity-90 transition-all w-full cursor-pointer text-center">
+            <a href="#support" onClick={() => setIsMenuOpen(false)} className="bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-opacity-90 transition-all w-full cursor-pointer text-center block">
               Get Quote
-            </button>
+            </a>
           </div>
         </div>
       )}
