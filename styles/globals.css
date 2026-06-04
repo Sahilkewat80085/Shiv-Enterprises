@@ -211,5 +211,12 @@ html {
   animation-play-state: paused;
 }
 
+/* Premium Glass Shine Animation */
+@keyframes glass-shine {
+  0% { transform: translateX(-200%) rotate(45deg); }
+  20%, 100% { transform: translateX(200%) rotate(45deg); }
+}
 
-
+.animate-glass-shine {
+  animation: glass-shine 8s ease-in-out infinite;
+}

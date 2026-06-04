@@ -42,14 +42,18 @@ export default function Hero() {
       </div>
 
       <div className="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary">
-        <div className="max-w-3xl animate-fade-in-up opacity-0">
+        <div className="max-w-3xl animate-fade-in-up opacity-0 relative overflow-hidden bg-white/5 backdrop-blur-2xl border-t border-l border-white/20 border-b border-r border-white/5 p-8 md:p-12 rounded-3xl shadow-[inset_0_0_40px_rgba(255,255,255,0.05),0_12px_40px_rgba(0,0,0,0.6)]">
+          {/* Animated diagonal reflection shine */}
+          <div className="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/10 to-transparent w-[100%] animate-glass-shine pointer-events-none mix-blend-overlay"></div>
+          
+          <div className="relative z-10">
           <span className="inline-block bg-accent-gold text-primary font-label-md px-3 py-1 rounded-xs mb-6 shadow-sm">
             ESTABLISHED 1999
           </span>
-          <h1 className="font-headline-xl-mobile md:font-headline-xl mb-6 drop-shadow-lg">
+          <h1 className="font-headline-xl-mobile md:font-headline-xl mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-accent-gold drop-shadow-sm">
             Trusted Security &amp; Power Solutions Since 25+ Years
           </h1>
-          <p className="font-body-lg text-inverse-on-surface mb-10 max-w-2xl drop-shadow-md">
+          <p className="font-body-lg text-inverse-on-surface mb-10 max-w-2xl drop-shadow-md mx-auto md:mx-0">
             CCTV Installation, Solar Systems, Biometric Access, EPBX &amp; Power
             Backup Solutions for Homes and Businesses.
           </p>
@@ -58,10 +62,11 @@ export default function Hero() {
               <span className="material-symbols-outlined">call</span>
               Call Now
             </a>
-            <a href="https://wa.me/918408829992" target="_blank" rel="noopener noreferrer" className="bg-surface-container-lowest/10 backdrop-blur-md border border-on-primary text-on-primary px-8 py-3 rounded-xs font-label-md hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <a href="https://wa.me/918408829992" target="_blank" rel="noopener noreferrer" className="bg-surface-container-lowest/10 backdrop-blur-xl border border-white/30 text-white px-8 py-3 rounded-xs font-label-md hover:bg-white hover:text-primary transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               <span className="material-symbols-outlined">chat</span>
               WhatsApp Us
             </a>
+          </div>
           </div>
         </div>
       </div>
