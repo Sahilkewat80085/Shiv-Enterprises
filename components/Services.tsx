@@ -43,7 +43,8 @@ export default function Services() {
       id: "epbx",
       title: "EPBX Systems",
       description: "Robust internal communication networks for seamless business operations.",
-      icon: "router",
+      imageSrc: "/images/service-epbx.png",
+      imageAlt: "Modern EPBX telecommunications switchboard in a server room",
     },
     {
       id: "support",

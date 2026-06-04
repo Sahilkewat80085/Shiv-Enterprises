@@ -42,9 +42,9 @@ export default function Hero() {
       </div>
 
       <div className="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 text-center md:text-left text-on-primary">
-        <div className="max-w-3xl animate-fade-in-up opacity-0 relative overflow-hidden bg-white/5 backdrop-blur-2xl border-t border-l border-white/20 border-b border-r border-white/5 p-8 md:p-12 rounded-3xl shadow-[inset_0_0_40px_rgba(255,255,255,0.05),0_12px_40px_rgba(0,0,0,0.6)]">
+        <div className="max-w-3xl animate-fade-in-up opacity-0 relative overflow-hidden bg-white/10 backdrop-blur-3xl border-t border-l border-white/30 border-b border-r border-white/10 p-8 md:p-12 rounded-3xl shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),inset_0_0_40px_rgba(255,255,255,0.05),0_20px_60px_rgba(0,0,0,0.8)]">
           {/* Animated diagonal reflection shine */}
-          <div className="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/10 to-transparent w-[100%] animate-glass-shine pointer-events-none mix-blend-overlay"></div>
+          <div className="absolute -inset-[100%] bg-gradient-to-tr from-transparent via-white/30 to-transparent w-[100%] animate-glass-shine pointer-events-none mix-blend-overlay"></div>
           
           <div className="relative z-10">
           <span className="inline-block bg-accent-gold text-primary font-label-md px-3 py-1 rounded-xs mb-6 shadow-sm">
