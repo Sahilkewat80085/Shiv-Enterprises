@@ -30,9 +30,9 @@ export default function Hero() {
             src={src}
             alt={`Background ${index + 1}`}
             fill
-            priority={index === 0}
+            priority={true} // Preload all images to prevent any flashing during transition
             sizes="100vw"
-            className={`object-cover transition-opacity duration-1000 ease-in-out ${
+            className={`object-cover transition-opacity duration-[2000ms] ease-in-out ${
               index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}
           />
