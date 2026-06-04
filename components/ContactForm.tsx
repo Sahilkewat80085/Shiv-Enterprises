@@ -20,8 +20,14 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate API submission
-    console.log("Form Submitted:", formData);
+    
+    // Construct WhatsApp message with form details
+    const text = `*New Inquiry from Website!*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Service:* ${formData.service}%0A*Message:* ${formData.message}`;
+    const whatsappUrl = `https://wa.me/918408829992?text=${text}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, "_blank");
+
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
