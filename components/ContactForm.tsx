@@ -46,17 +46,17 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
           {/* Quote Form */}
-          <div className="bg-surface-container-lowest p-8 border border-outline-variant rounded shadow-xs">
+          <div className="bg-surface-container-lowest p-8 border border-outline-variant rounded shadow-xs flex flex-col h-full">
             <h2 className="font-headline-md text-primary mb-6">Request a Quote</h2>
             
             {isSubmitted ? (
-              <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 rounded p-6 text-center space-y-2">
+              <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 rounded p-6 text-center space-y-2 flex-grow flex flex-col justify-center items-center">
                 <span className="material-symbols-outlined text-4xl text-emerald-600 block">check_circle</span>
                 <h3 className="font-headline-sm font-semibold">Thank You!</h3>
                 <p className="font-body-sm">Your inquiry has been successfully received. We will get back to you shortly.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="flex flex-col flex-grow gap-4">
                 <div>
                   <label htmlFor="name" className="block font-label-md text-primary mb-1">
                     Full Name
@@ -111,7 +111,7 @@ export default function ContactForm() {
                   </div>
                 </div>
                 
-                <div>
+                <div className="flex flex-col flex-grow">
                   <label htmlFor="message" className="block font-label-md text-primary mb-1">
                     Message (Optional)
                   </label>
@@ -120,14 +120,13 @@ export default function ContactForm() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none font-body-sm transition-all"
-                    rows={3}
+                    className="w-full flex-grow min-h-[120px] resize-none bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none font-body-sm transition-all"
                     placeholder="Describe your requirements..."
                   />
                 </div>
                 
                 <button
-                  className="w-full bg-primary text-on-primary py-3 rounded font-label-md hover:bg-opacity-90 transition-all cursor-pointer text-center"
+                  className="w-full mt-auto bg-primary text-on-primary py-3 rounded font-label-md hover:bg-opacity-90 transition-all cursor-pointer text-center"
                   type="submit"
                 >
                   Submit Inquiry
