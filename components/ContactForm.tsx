@@ -11,11 +11,15 @@ export default function ContactForm() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const sanitizeInput = (str: string) => {
+    return str.replace(/[<>{}[\]]/g, ""); // Strip potential script tags
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: sanitizeInput(value) }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -67,6 +71,7 @@ export default function ContactForm() {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    maxLength={100}
                     className="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none font-body-sm transition-all"
                     type="text"
                     placeholder="Enter your full name"
@@ -84,6 +89,9 @@ export default function ContactForm() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
+                      maxLength={15}
+                      pattern="^[+0-9\s\-]{10,15}$"
+                      title="Valid phone number between 10 and 15 digits"
                       className="w-full bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none font-body-sm transition-all"
                       type="tel"
                       placeholder="e.g. +91 84088 29992"
@@ -120,6 +128,7 @@ export default function ContactForm() {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
+                    maxLength={500}
                     className="w-full flex-grow min-h-[120px] resize-none bg-surface-container-lowest border border-outline-variant rounded p-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none font-body-sm transition-all"
                     placeholder="Describe your requirements..."
                   />
