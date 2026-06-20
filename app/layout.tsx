@@ -35,6 +35,14 @@ export default function RootLayout({
       </head>
       <body className="bg-surface text-on-surface font-body-md antialiased min-h-full flex flex-col">
         {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('contextmenu', event => event.preventDefault());
+              document.addEventListener('dragstart', event => event.preventDefault());
+            `,
+          }}
+        />
       </body>
     </html>
   );
